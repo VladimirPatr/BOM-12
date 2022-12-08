@@ -109,6 +109,11 @@ $('.header__burger').on('click', function() {
 navigation.on('click', function(e) {
 
 	const target = e.target;
+
+	if (target.closest('modal-order__close-svg')){
+		console.log('YES')
+	}
+
 	if (target.className == 'header__navigation navigation' || target.className == 'navigation__close') {
         navigation.animate({
 		left: -400

@@ -58,3 +58,6 @@ button:focus, button:active {
     display: block;
 }
 
+svg {
+    pointer-events: none;
+}
